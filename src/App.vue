@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="app">
     <ul class="btns">
       <li class="btn" @click="showDialogHandler">alert 消息层</li>
       <li class="btn" @click="delayHandler">Tips 消息层</li>

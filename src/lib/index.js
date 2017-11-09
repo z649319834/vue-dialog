@@ -1,7 +1,5 @@
 import dialog from "./vue-dialog.vue"
-if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(paykeyboard); 
-}
+
 let CONFIG_DEFAULT={
 	type:false,
 	isShow:false,
@@ -58,6 +56,9 @@ const Show=function(config={}){
 
 const Hide=function(){
 	tpl.$data.isShow=false;
+}
+if (typeof window !== 'undefined' && window.Vue) {
+  window.Vue.use(paykeyboard); 
 }
 
 export default {
