@@ -1,6 +1,6 @@
 {
-  "name": "vue-dialog-z",
-  "description": "弹层组件",
+  "name": "vue-dialog",
+  "description": "vue弹层组件",
   "version": "1.0.0",
   "author": "Simon_Zhong",
   "license": "MIT",
