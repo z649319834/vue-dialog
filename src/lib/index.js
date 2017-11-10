@@ -14,6 +14,7 @@ let CONFIG_DEFAULT={
 		style:{}
 	},
 	message:{
+		text:"",
 		cssClass:"",
 		style:{}
 	},

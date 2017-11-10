@@ -8,9 +8,6 @@
 				<ul v-show="!type&&message.text&&buttons.length" class="dialog-buttons" :class="btnBody.cssClass" :style="btnBody.style">
 					<li class="dialog-btn" v-for="(item,index) in buttons" :key="index" @click.prevent="closeHandler(item.callBack)" :class="['dialog-btn'+index%2,item.cssClass]" :style="item.style">{{item.text}}</li>
 				</ul>
-				<!-- <div v-if="isTips&&!type" class="tips-layer" :style="tips.bodyStyle" :class="tips.bodyCssClass">
-					<div class="tips-msg" :style="tips.style" :class="tips.cssClass" v-html="tips.text"></div>
-				</div> -->
 			</div>
 		</div>
 	</transition>
@@ -54,15 +51,6 @@
 				delayFn:null,
 				initFn:null,
 				closeFn:null,
-				/*isTips:false
-				tips:{
-					bodyStyle:{},
-					bodyCssClass:"",
-					text:"Tips 消息",
-					cssClass:"",
-					style:{},
-					delay:2000
-				}*/
 			}
 		},
 		
