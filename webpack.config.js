@@ -5,7 +5,7 @@ module.exports = {
   // entry: './src/main.js',
   entry: './src/lib/index.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
+    path: path.resolve(__dirname, './dist/'),
     publicPath: '/dist/',
     // filename: 'build.js'
     filename: 'vue-dialog.js',
@@ -39,7 +39,7 @@ module.exports = {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
         options: {
-          name: '[name].[ext]?[hash]'
+          name: 'images/[name].[ext]?[hash]'
         }
       }
     ]
