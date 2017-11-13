@@ -1,6 +1,6 @@
 <template>
 	<transition name="fadeIn" mode="out-in">
-		<div v-if="isShow" class="dialog-layer" @click.prevent="touchmoveHandler">
+		<div v-show="isShow" class="dialog-layer" @click.prevent="touchmoveHandler">
 			<div class="dialog-content" :class="[type?'dialog-tips':'dialog-alert',dialog.cssClass]" :style="dialog.style">
 				<span v-show="isclose" class="dialog-close" @click.stop="closeHandler"></span>
 				<div v-show="title.text" class="dialog-title" v-text="title.text" :class="title.cssClass" :style="title.style"></div>
