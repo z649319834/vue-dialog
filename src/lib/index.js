@@ -39,10 +39,6 @@ let CONFIG_DEFAULT={
 let tpl;
 
 const Show=function(config={}){
-	let Tpl_dia=this.extend(dialog);
-	tpl=new Tpl_dia();
-	tpl.el=tpl.$mount().$el;
-	document.body.appendChild(tpl.$mount().$el);
 	config={
 		...CONFIG_DEFAULT,
 		...config
@@ -64,10 +60,10 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
 	install:function(Vue){
-		/*let Tpl_dia=Vue.extend(dialog);
+		let Tpl_dia=Vue.extend(dialog);
 		tpl=new Tpl_dia();
 		tpl.el=tpl.$mount().$el;
-		document.body.appendChild(tpl.el);*/
+		document.body.appendChild(tpl.el);
 		Vue.prototype.$dialog=Show.bind(Vue);
 		Vue.prototype.$dialog["hide"]=Hide;
 	}
